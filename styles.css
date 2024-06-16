@@ -1,0 +1,120 @@
+/* Reset de estilos y configuración básica */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.producto {
+    /* Estilos previos existentes */
+    display: flex; /* Mostrar elementos en fila */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Alinear elementos al centro */
+    text-align: center; /* Alinear texto al centro */
+    padding: 1rem; /* Espaciado interior */
+    margin: 1rem; /* Margen exterior */
+    width: 220px; /* Ancho fijo para cada producto */
+    background-color: #333; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra */
+}
+
+.producto h2 {
+    font-size: 1.2rem; /* Tamaño de fuente del título */
+    margin: 0.5rem 0; /* Margen superior e inferior */
+}
+
+.producto p {
+    color: #ccc; /* Color de texto */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+.producto .precio {
+    font-size: 1.5rem; /* Tamaño de fuente del precio */
+    color: #e91e63; /* Color del precio */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+.producto .boton-comprar {
+    background-color: #e91e63; /* Color de fondo del botón */
+    color: white; /* Color de texto del botón */
+    padding: 0.5rem 1rem; /* Relleno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer; /* Cambio de cursor al pasar */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.producto .boton-comprar:hover {
+    background-color: #c2185b; /* Cambio de color de fondo al pasar el ratón */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.redes-sociales {
+    margin-bottom: 1rem;
+}
+
+.redes-sociales h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem; /* Tamaño de fuente */
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+.garantia {
+    font-size: 0.8rem;
+}
+
+
+.producto img {
+    width: 100%; /* Ancho del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+    border-radius: 8px; /* Opcional: borde redondeado para las imágenes */
+}
